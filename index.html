@@ -15,14 +15,26 @@
 </head>
 
 <body>
+
+
+
   <div class="container">
-    <div class="input-group col-5">
-      <input type="text" class="form-control col-m5" id="name">
-      <!-- chamada pelo nome do método em arquivo externo -->
-      <button class="btn btn-success" onclick="submit()">Clique aqui</button>
-      <!-- chamada do alert inline -->
-      <!-- <button class="btn btn-success" onclick="alert(document.getElementById('name').value)">Clique aqui</button> -->
-    </div>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Qual o seu nome?</label>
+        <input type="text" class="form-control" id="nome" aria-describedby="emailHelp"
+          placeholder="digite aqui o seu nome">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Qual a sua profissão?</label>
+        <input type="text" class="form-control" id="profissao" placeholder="digite aqui sua profissão">
+      </div>
+      <button class="btn btn-success" onclick="submit()">Mostrando pelo método</button><button class="btn btn-success"
+        onclick="alert('Bem vindo '+document.getElementById('profissao').value+' '+document.getElementById('nome').value)">Mostrando
+        inline</button>
+    </form>
+
   </div>
 </body>
 
