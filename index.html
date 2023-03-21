@@ -17,8 +17,11 @@
 <body>
   <div class="container">
     <div class="input-group col-5">
-      <input type="text" class="form-control col-m5" id="name" style="width: 100px;">
+      <input type="text" class="form-control col-m5" id="name">
+      <!-- chamada pelo nome do método em arquivo externo -->
       <button class="btn btn-success" onclick="submit()">Clique aqui</button>
+      <!-- chamada do alert inline -->
+      <!-- <button class="btn btn-success" onclick="alert(document.getElementById('name').value)">Clique aqui</button> -->
     </div>
   </div>
 </body>
